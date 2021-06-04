@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "codechallenge"
+  "defaultProject": "codechallenge",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #011a32;
+    font: 16px/1.25 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100em;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: center;
+    min-height: 7em;
+    padding: 1em;
+    width: 100%;
+    border:2px solid black;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 1.3em;
+    font-weight: 900;
+    line-height: 1.5;
+    background-color: rgb(0, 0, 0);
+
+}
+
+h1:hover {
+    animation-play-state: paused;
+   
+}
+
+a {
+    color: #024794;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h3{
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+*{
+    margin:0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+.blogs{
+border:2px solid black;
+height:100%;
+    background-color: black;
+}
+.blogs:hover{
+    /* background-color: rgb(22, 22, 22); */
+}
+h3{
+    color: white;
+    /* border: 2px solid white; */
+    margin-top: 5em;
+    /* box-shadow:2px 2px 10px white; */
+ 
+}
+tr{
+  /* background-color: blue; */
+  display: inline-block;
+  margin:3%;
+  margin-left: 3em;
+ 
+  /* height: 20rem; */
+}
+.card{
+     /* border:2px solid white;  */
+    height:auto; 
+    margin:1em;
+    width:20em;
+    display: inline-block;
+    background-color: grey;
+ 
+}
+.card:hover{
+    transform: scale(1.2); 
+color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey; 
+}
+
+.card:hover #imdb{
+    color:yellow
+}
+.card:hover #year{
+    color:red
+}
+.card:hover .card-title{
+   color: rgb(255, 255, 255);
+}
+
+
+
+
+

@@ -1,0 +1,32 @@
+
+
+
+
+<div id="wrapper">
+  <div id="container">
+
+     <a routerLink="#"><h1>Watch Latest Movies in 131 languages for FREE!!</h1></a> 
+   
+
+  </div>
+</div>
+<div class="blogs">
+  <i><h3></h3></i>  
+<br><br>
+  <!-- CARDS -->
+  <tr *ngFor="let i of movies.Search">
+  <div class="card" style="">
+      <img src="{{i.Poster}}" style="height: 17em;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{i.Title}}</h5>
+        <br>
+        <p class="card-text" id="year">YEAR: {{i.Year}}</p>
+        <h6 class="card-text" id="imdb" >IMDBId: {{i.imdbID}}</h6>
+        <br>
+        <a routerLink="/home2" (click)="movie(i.imdbID)" class="btn btn-primary" >Watch now</a>
+        <br>
+      </div>
+    </div>
+  </tr>
+
+</div>
